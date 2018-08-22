@@ -8,13 +8,17 @@ var mainApp = {};
       email = user.email;
       name = user.displayName;
       writeUserData(name, uid, email);
-      document.getElementById("login").style.display = "none";
+      $("#login").hide();
+      $("#logout").show();
       console.log("Sign in confirmed");
+      // toastNotif(name);
     } else {
+      $(".tasks").hide();
       uid = null;
       // Redirect to login page
       //   window.location.replace("auth.html");
-      document.getElementById("login").style.display = "show";
+      $("#logout").hide();
+      $("#login").show();
       console.log("no user logged in");
     }
   });
@@ -30,7 +34,21 @@ var mainApp = {};
     firebase.auth().signOut();
   });
 
-  //   Realtime Database
+  // Toast Notifications
+  function toastNotif(name) {
+    M.toast({
+      classes: "idToast",
+      html: "Welcome, " + name,
+      completeCallback: hideNotif()
+    });
+  }
+
+  // Hide Notification after displayed
+  function hideNotif() {
+    $(".idToast");
+  }
+
+  //  Realtime Database
   function writeUserData(name, uid, email) {
     var database = firebase.database();
     var usersRef = database.ref("users");
