@@ -29,7 +29,7 @@
     <div class="tasks">
         <div class="section">
             <div class="container">
-                <table class="responsive-table centered">
+                <table id="task_table" class="responsive-table centered">
                     <thead>
                         <tr>
                             <th>Task</th>
@@ -45,11 +45,11 @@
         <div class="container">
             <div class="section">
                 <div class="row">
-                    <form class="col s12">
+                    <form id="new_task_form" class="col s12">
                         <div class="row">
                             <div class="input-field col s6 offset-s3">
                                 <input placeholder="New Task" id="new_task" type="text" class="validate">
-                                <button id="submitBtn" class="btn-floating btn-large waves-effect waves-light red" type="submit"><i
+                                <button type="button" id="submitBtn" class="btn-floating btn-large waves-effect waves-light red"><i
                                         class="material-icons">add</i></button>
                             </div>
                         </div>

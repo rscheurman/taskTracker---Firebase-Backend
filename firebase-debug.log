@@ -1,41 +1,24 @@
-[debug] [2018-08-22T18:29:57.819Z] ----------------------------------------------------------------------
-[debug] [2018-08-22T18:29:57.822Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\riley\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-08-22T18:29:57.822Z] CLI Version:   4.0.3
-[debug] [2018-08-22T18:29:57.822Z] Platform:      win32
-[debug] [2018-08-22T18:29:57.822Z] Node Version:  v8.11.3
-[debug] [2018-08-22T18:29:57.822Z] Time:          Wed Aug 22 2018 12:29:57 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:57.822Z] ----------------------------------------------------------------------
+[debug] [2018-09-11T03:34:11.162Z] ----------------------------------------------------------------------
+[debug] [2018-09-11T03:34:11.167Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\riley\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-09-11T03:34:11.168Z] CLI Version:   4.2.1
+[debug] [2018-09-11T03:34:11.168Z] Platform:      win32
+[debug] [2018-09-11T03:34:11.168Z] Node Version:  v8.11.4
+[debug] [2018-09-11T03:34:11.168Z] Time:          Mon Sep 10 2018 21:34:11 GMT-0600 (Mountain Daylight Time)
+[debug] [2018-09-11T03:34:11.168Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-08-22T18:29:57.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-08-22T18:29:57.833Z] > authorizing via signed-in user
-[debug] [2018-08-22T18:29:57.835Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-08-22T18:29:57.836Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/j1v7wxL7avbFdur33LSH2J_TAFA6ZUl6C-qO-oe7vxE',
-  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
-  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
-  grant_type: 'refresh_token',
-  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Wed Aug 22 2018 12:29:57 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:58.092Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-22T18:29:58.102Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tasktracker-c8e8d  
-  
- Wed Aug 22 2018 12:29:58 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:58.422Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-22T18:29:58.422Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tasktracker-c8e8d/tokens  
-  
- Wed Aug 22 2018 12:29:58 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:58.814Z] <<< HTTP RESPONSE 200
-[debug] [2018-08-22T18:29:58.815Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tasktracker-c8e8d  
-  
- Wed Aug 22 2018 12:29:58 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:59.118Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-11T03:34:11.186Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-11T03:34:11.187Z] > authorizing via signed-in user
+[debug] [2018-09-11T03:34:11.190Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tasktracker-c8e8d  
+ 
+[debug] [2018-09-11T03:34:11.654Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-11T03:34:11.656Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tasktracker-c8e8d  
+ 
+[debug] [2018-09-11T03:34:12.041Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\riley\Documents\Coding\Projects\firebase\Example Apps\taskTracker'...
+[info] === Serving from 'C:\Users\riley\OneDrive\Documents\Coding\firebase\taskTracker'...
 [info] 
-[debug] [2018-08-22T18:29:59.120Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/593526783184/clients/_:getWebAppConfig  
-  
- Wed Aug 22 2018 12:29:59 GMT-0600 (Mountain Daylight Time)
-[debug] [2018-08-22T18:29:59.496Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
+[debug] [2018-09-11T03:34:12.046Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/593526783184/clients/_:getWebAppConfig  
+ 
+[debug] [2018-09-11T03:34:12.298Z] <<< HTTP RESPONSE 200
+[info] i  hosting[tasktracker-c8e8d]: Serving hosting files from: public
+[info] +  hosting[tasktracker-c8e8d]: Local server: http://localhost:5000
