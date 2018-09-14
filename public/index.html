@@ -6,18 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/materialize.min.css">
+    <script src="js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
-
-    <h1>This is the main page</h1>
-    <button id="logout">logout</button>
-    <button id="login">login</button>
-<script src="js/firebase.js"></script>
-<script src="js/index.js"></script>
-
+    <nav class="#757575 grey darken-1">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo" id="brand"></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="login" href="auth.html">Login</a></li>
+                    <li><a id="logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="tasks">
+        <div class="section">
+            <div class="container">
+                <table class="responsive-table centered">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- This is where the table data goes -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- New task interface -->
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6 offset-s3">
+                                <input placeholder="New Task" id="new_task" type="text" class="validate">
+                                <button id="submitBtn" class="btn-floating btn-large waves-effect waves-light red" type="submit"><i
+                                        class="material-icons">add</i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/firebase.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/tasksDB.js"></script>
 </body>
+
 </html>

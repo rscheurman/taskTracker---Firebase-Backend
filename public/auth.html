@@ -9,17 +9,30 @@
     <title>Login/Logout - Task Tracker</title>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
-    
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/materialize.min.js"></script>
 </head>
 
 <body>
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-     Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to My Awesome App</h1>
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader">Loading...</div>
-    <script src="js/firebase.js"></script>
-    <script src="js/auth.js"></script>
+    <nav class="#757575 grey darken-1">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo">Login</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="center-align">
+            <div id="firebaseui-auth-container"></div>
+            <div id="loader">Loading...</div>
+            <script src="js/firebase.js"></script>
+            <script src="js/auth.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>
