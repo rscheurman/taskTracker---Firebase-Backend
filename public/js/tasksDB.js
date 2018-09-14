@@ -1,17 +1,4 @@
 (function() {
-<<<<<<< HEAD
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      var uid = user.uid;
-    } else {
-      // No user is signed in.
-    }
-		
-		
-
-		
-  });
-=======
 	firebase.auth().onAuthStateChanged(function(user) {
 		if (user) {
 			// User is signed in
@@ -79,5 +66,4 @@
 			});
 		});
 	});
->>>>>>> impCloudFirestore
 })();
