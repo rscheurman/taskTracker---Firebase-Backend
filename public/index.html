@@ -9,12 +9,14 @@
     <script src="js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 
 <body>
+        <!-- Multi-Task Project Stuff -- IN DEVELOPMENT -->
+    <!-- Nav -->
     <nav class="#757575 grey darken-1">
         <div class="container">
             <div class="nav-wrapper">
@@ -23,43 +25,57 @@
                     <li><a id="login" href="auth.html">Login</a></li>
                     <li><a id="logout">Logout</a></li>
                 </ul>
+                <ul id="project_management-btn" class="center">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">New Project</button>
+                </ul>
             </div>
         </div>
     </nav>
-    <div class="tasks">
-        <div class="section">
-            <div class="container">
-                <table id="task_table" class="responsive-table centered">
-                    <thead>
-                        <tr>
-                            <th>Task</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- This is where the table data goes -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <!-- New task interface -->
-        <div class="container">
-            <div class="section">
-                <div class="row">
-                    <form id="new_task_form" class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6 offset-s3">
-                                <input placeholder="New Task" id="new_task" type="text" class="validate">
-                                <button type="submit" id="submitBtn" class="btn-floating btn-large waves-effect waves-light red"><i
-                                        class="material-icons">add</i></button>
-                            </div>
-                        </div>
-                    </form>
+    <div class="container">
+        <div class="row">
+        <div class="col s2 m4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">First Project</span>
+                    <span class="card-content">
+                        <ul>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                        </ul>
+                    </span>
                 </div>
             </div>
         </div>
-        <script src="js/firebase.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/tasksDB.js"></script>
+        
+        <div class="col s2 m4">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Second Project</span>
+                    <span class="card-content">
+                        <ul>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                            <li>Mow Lawn</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <!-- JS File Calls -->
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tasksDB.js"></script>
 </body>
 
 </html>

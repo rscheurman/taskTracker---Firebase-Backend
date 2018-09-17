@@ -49,7 +49,6 @@ var mainApp = {};
 		}
 
 		//  Cloud firestore writing user data
-
 		function writeUserData(name, uid, email) {
 			const database = firebase.firestore();
 			const settings = {
